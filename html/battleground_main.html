@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!-- battleground_main.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../../fonts/nanumFonts.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/common.css" />
+  <link rel="stylesheet" href="../css/src/battleground_main.css" />
+
+  <!--[if IE]>
+    
+  <script src="../ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+   <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <script src="../ie/ie9.min.js"></script>
+  <script src="../ie/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png"/>
+
+  <title>rwd 배틀그라운드</title>
+</head>
+<body>
+  <!-- layout -->
+<div id="wrap">
+    <header id="headBox">
+  <div class="container">
+   <h1 class="hidden_wrap"><a href="battleground_main.html"><span>배틀그라운드</span></a>
+   </h1>
+
+   <div class="mob_menu">
+      <button type="button">
+        <img src="../img/battleground_img/mob_menu.png" alt="배틀그라운드메뉴"></button>
+        
+    <div class="mob_box">
+      <dl>
+      <dt><a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/notice/list?bbsId=PN001">새소식</a></dt>
+        <dd>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/notice/list?bbsId=PN001">공지사항</a><br/>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/update/list?bbsId=PN001&objCate1=202">업데이트</a><br/>
+          <a href="http://localhost:3000/html/battleground_sub_03.html">gm소식</a><br/>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/competition/list?bbsId=PN001&objCate1=223">대회소식</a>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><a href="http://guide.pubg.game.daum.net/">가이드</a></dt>
+          <dd>
+            <a href="http://guide.pubg.game.daum.net/">게임 가이드</a><br/>
+            <a href="http://localhost:3000/html/battleground_sub_04.html">지도 정보/공략</a><br/>
+            <a href="http://pubg.inven.co.kr/dataninfo/item/">아이템 db인벤</a><br/>
+            <a href="http://pubg.inven.co.kr/dataninfo/costume/">의상 스킨인벤</a>
+          </dd>
+      </dl>
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/index.daum">커뮤니티</a></dt>
+          <dd>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/free/list?bbsId=PC002">플레이어 게시판</a><br/>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/media/list?bbsId=PC003">미디어 게시판</a><br/>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/duo_squad/list?bbsId=PC001">duo/squad 모집</a>
+          </dd>
+      </dl>
+  
+      <dl>
+        <dt><a href="https://www.youtube.com/channel/UCOub0XBZ66rTQ5a_xt2O_7Q">sns</a></dt>
+        <dd> 
+          <a href="https://discordapp.com/invite/jVVkq2R">디스코드</a><br/>
+          <a href="https://www.facebook.com/kakaobattlegrounds">페이스북</a><br/>
+          <a href="https://www.youtube.com/channel/UCOub0XBZ66rTQ5a_xt2O_7Q">유튜브</a>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/event/progress/index.daum">이벤트</a></dt>
+        <dd>
+          <a href="http://pubg.game.daum.net/pubg/event/progress/index.daum">이벤트</a><br/>
+          <a href="http://pubg.game.daum.net/pubg/event/pointshop/index.daum">포인트 교환소</a><br/>
+          <a href="http://localhost:3000/html/battleground_sub_01.html">전국 PC방 배틀</a>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/shop/package/index.daum">상점</a></dt>
+          <dd><a href="http://pubg.game.daum.net/pubg/shop/package/index.daum">게임구매</a></dd>
+      </dl>
+      
+      <dl>
+          <dt><a href="http://pubg.game.daum.net/pubg/pds/download/index.daum">자료실</a></dt>
+          <dd>
+            <a href="http://pubg.game.daum.net/pubg/pds/download/index.daum">다운로드</a>
+          </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/cs/faq/index.daum">고객센터</a></dt>
+        <dd>
+          <a href="http://localhost:3000/html/battleground_sub_02.html">고객센터</a><br/>
+          <a href="http://siren.game.daum.net/pubg/stolen/index.daum">신고센터</a><br/>
+          <a href="http://game.daum.net/security/index.daum">보안센터</a>
+        </dd>
+      </dl>
+    </div>
+      
+
+    </div>
+     
+  
+
+    <div class="menu_box">
+      <dl>
+      <dt><a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/notice/list?bbsId=PN001">새소식</a></dt>
+        <dd>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/notice/list?bbsId=PN001">공지사항</a><br/>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/update/list?bbsId=PN001&objCate1=202">업데이트</a><br/>
+          <a href="http://localhost:3000/html/battleground_sub_03.html">gm소식</a><br/>
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/competition/list?bbsId=PN001&objCate1=223">대회소식</a>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><a href="http://guide.pubg.game.daum.net/">가이드</a></dt>
+          <dd>
+            <a href="http://guide.pubg.game.daum.net/">게임 가이드</a><br/>
+            <a href="http://localhost:3000/html/battleground_sub_04.html">지도 정보/공략</a><br/>
+            <a href="http://pubg.inven.co.kr/dataninfo/item/">아이템 db인벤</a><br/>
+            <a href="http://pubg.inven.co.kr/dataninfo/costume/">의상 스킨인벤</a>
+          </dd>
+      </dl>
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/index.daum">커뮤니티</a></dt>
+          <dd>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/free/list?bbsId=PC002">플레이어 게시판</a><br/>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/media/list?bbsId=PC003">미디어 게시판</a><br/>
+            <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/duo_squad/list?bbsId=PC001">duo/squad 모집</a>
+          </dd>
+      </dl>
+  
+      <dl>
+        <dt><a href="https://www.youtube.com/channel/UCOub0XBZ66rTQ5a_xt2O_7Q">sns</a></dt>
+        <dd> 
+          <a href="https://discordapp.com/invite/jVVkq2R">디스코드</a><br/>
+          <a href="https://www.facebook.com/kakaobattlegrounds">페이스북</a><br/>
+          <a href="https://www.youtube.com/channel/UCOub0XBZ66rTQ5a_xt2O_7Q">유튜브</a>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/event/progress/index.daum">이벤트</a></dt>
+        <dd>
+          <a href="http://pubg.game.daum.net/pubg/event/progress/index.daum">이벤트</a><br/>
+          <a href="http://pubg.game.daum.net/pubg/event/pointshop/index.daum">포인트 교환소</a><br/>
+          <a href="http://localhost:3000/html/battleground_sub_01.html">전국 PC방 배틀</a>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/shop/package/index.daum">상점</a></dt>
+          <dd><a href="http://pubg.game.daum.net/pubg/shop/package/index.daum">게임구매</a></dd>
+      </dl>
+      
+      <dl>
+          <dt><a href="http://pubg.game.daum.net/pubg/pds/download/index.daum">자료실</a></dt>
+          <dd>
+            <a href="http://pubg.game.daum.net/pubg/pds/download/index.daum">다운로드</a>
+          </dd>
+      </dl>
+
+      <dl>
+        <dt><a href="http://pubg.game.daum.net/pubg/cs/faq/index.daum">고객센터</a></dt>
+        <dd>
+          <a href="http://localhost:3000/html/battleground_sub_02.html">고객센터</a><br/>
+          <a href="http://siren.game.daum.net/pubg/stolen/index.daum">신고센터</a><br/>
+          <a href="http://game.daum.net/security/index.daum">보안센터</a>
+        </dd>
+      </dl>
+  </div>
+
+ 
+   <div class="login_box">
+     <h2 class="hidden">로그인 박스</h2>
+      <ul>
+        <li><a href="#">log-in</a></li>
+        <li><a href="#">game start</a></li>
+      </ul>
+   </div>
+</div>
+ 
+  </header>
+  <!-- header end -->
+
+  <article id="adBanner">
+    
+    <ul class="ad_imgbox">
+      <li class="ad_img1 hidden_wrap active">
+        <div class="expl hidden_wrap"><span>광고설명</span></div>
+        <div class="ad_detail">
+          <a href="http://pubg.game.daum.net/pubg/event/godofpubg/index.daum">자세히보기</a>
+        </div>
+    <span>광고이미지</span></li>
+      <li class="ad_img2 hidden_wrap">
+         <div class="expl hidden_wrap"><span>광고설명</span></div>
+        <div class="ad_detail">
+          <a href="http://bbs.pubg.game.daum.net/gaia/do/pubg/gm/read?bbsId=PN002&articleId=95">자세히보기</a>
+        </div>
+    <span>광고이미지</span></li>
+      <li class="ad_img3 hidden_wrap">
+         <div class="expl hidden_wrap"><span>광고설명</span></div>
+        <div class="ad_detail">
+          <a href="http://pubg.game.daum.net/pubg/event/pointshop/index.daum">자세히보기</a>
+        </div>
+    <span>광고이미지</span></li>
+      <li class="ad_img4 hidden_wrap">
+         <div class="expl hidden_wrap"><span>광고설명</span></div>
+        <div class="ad_detail">
+          <a href="http://pubg.game.daum.net/pubg/event/mrk2/index.daum">자세히보기</a>
+        </div>
+    <span>광고이미지</span></li>
+
+    </ul>
+
+    <h2 class="hidden_wrap"><span>광고배너</span></h2>
+
+    <div class="arrow_box hidden_wrap">
+      <button type="button" class="next_button">&rsaquo;<span>다음광고</span></button>
+      <button type="button" class="prev_button">&lsaquo;<span>이전광고</span></button>
+    </div>
+
+    <ul class="ad_conbox">
+      <li class="ad_title hidden">ad_title</li>
+      <li class="ad_content hidden">ad_content</li>
+      
+      
+    </ul>
+
+  </article>
+      <!-- //#adBanner -->
+
+
+    <article id="infoBox01">
+      <div class="info_box_01">
+        <dl class="info_dl clearfix">
+          <dt><button type="button">공지사항</button>
+          </dt>
+          <dd class="info_con01 active">
+            <div class="article1_img_01 hidden_wrap"><span>공지사항 이미지</span>
+            </div>
+            <h5>PUBG 홈커밍 
+            오프라인 행사 안내</h5>
+            <p>2018년을 마무리하며, <br/>PUBG에서 주관하는 오프라인 행사인 <br/>
+            'PUBG 홈커밍데이' 를 개최합니다 :)<br/> 
+            비켄디를 실제로 체험할 수 있는 기회,<br/> 행사장 곳곳에 있는 미션과 <br/>
+            각종 이벤트를 마음껏 참가할 수도 있습니다!</p>
+          </dd>
+
+          <dt>
+            <button type="button">업데이트</button>
+          </dt>
+          <dd class="info_con02"><div class="article1_img_02 hidden_wrap"></div>
+            <h5>정식서비스(1.0버전)
+            24차 업데이트</h5>
+            <p>24차 업데이트 예정사항에 <br/>
+            대한 안내 말씀 드립니다.<br/>
+            업데이트를 위한<br/>
+            점검일정은 추후 별도 공지를<br/>
+            통해 안내할 예정입니다</p>
+           </dd>
+
+          <dt>
+            <button type="button">gm소식</button>
+          </dt>
+          <dd class="info_con03"><div class="article1_img_03 hidden_wrap"><span>gm소식 이미지</span></div>
+            <h5>배틀그라운드
+            할인 판매 예고</h5>
+            <p>12월 19일(수) 업데이트 후 <br/>
+            패키지 할인 판매가 진행될 예정입니다. <br/>
+            할인 금액과 판매기간, 구성품을 <br/>
+            꼭 확인 후 구매해 주시기 
+            바랍니다.</p>
+          </dd>
+
+          <dt><button type="button">대회소식</button>
+          </dt>
+          <dd class="info_con04"><div class="article1_img_04 hidden_wrap"><span>대회소식 이미지</span></div>
+            <h5>PUBG KOREA 
+            LEAGUE 2018 #2 결승</h5>
+            <p>PUBG KOREA LEAGUE <br/>
+            2018 #2 PUBG POINT <br/>
+            최종 상위 16팀의 숨막히는
+            대결!</p>
+          </dd>
+        </dl>
+      </div>
+
+
+    </article> 
+    <!-- //#infoBox01 -->
+
+    <article id="infoBox02">
+      <h3><span>추천영상</span></h3>
+      <div class="info_box_02">
+        <div class="arrow_box hidden_wrap">
+                  <button type="button" class="next_button">&rsaquo;<span>다음광고</span></button>
+                  <button type="button" class="prev_button">&lsaquo;<span>이전광고</span></button>
+            </div>
+      <div class="image_box_01">
+        <div class="movie_outer">
+          <div class="mv01_wrap active" data-num="1">
+            <div class="mv_01">
+               <iframe src="https://www.youtube.com/embed/lqstIDTNVFY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div class="mv02_wrap" data-num="2">
+              <div class="mv_02">
+               <iframe src="https://www.youtube.com/embed/c_OQB7uR3nE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="mv03_wrap" data-num="3">
+              <div class="mv_03">
+               <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="mv04_wrap" data-num="4">
+              <div class="mv_04">
+               <iframe src="https://www.youtube.com/embed/NcAZcwyXKCU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="mv05_wrap" data-num="5">
+              <div class="mv_05">
+               <iframe src="https://www.youtube.com/embed/5iHnmBLIbk0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="mv06_wrap" data-num="6">
+              <div class="mv_06">
+               <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+        
+            
+        </div>
+      </div>
+   </div>
+    <div class="image_box_indi_01">1/6</div>
+
+     
+    
+      
+    
+
+    </article> 
+    <!-- //#infoBox02 -->
+
+    <section id="infoBox03">
+      <div class="info_box_04 clearfix">
+        <h3><span>지도 정보 공략</span></h3>
+        <ul>
+          <li><a href="http://pubg.game.daum.net/pubg/guide/map/erangel.daum"><span>에란겔 지도</span></a></li>
+          <li><a href="http://pubg.game.daum.net/pubg/guide/map/miramar.daum"><span>미라마 지도</span></a></li>
+          <li><a href="http://pubg.game.daum.net/pubg/guide/map/sanhok.daum"><span>사녹 지도</span></a></li>
+        </ul> 
+      </div>
+
+      <div class="info_box_05">
+        <h3><span>인벤 인증 게시물</span></h3>
+        <ul>
+          <li><a href="http://www.inven.co.kr/board/battlegrounds/5074/2953">파밍안하고 존버로 TOP10가기 [설원맵]</a></li>
+          <li><a href="http://www.inven.co.kr/board/battlegrounds/5074/2953">설원맵 비켄디 설산 올라가는 방법</a></li>
+          <li><a href="http://www.inven.co.kr/board/battlegrounds/5074/2952">[로시]훈련장이 생겨도 
+          늘지 않는...</a></li>
+        </ul>
+      </div>
+
+      <div class="info_box_06">
+        <h3><span>미디어 게시판</span></h3>
+        <div class="image_box_04">
+          <ul>
+            <li class="mv_07">
+              <iframe src="https://www.youtube.com/embed/Az-ZgyXTjaY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li>연예인 카배1위 매드무비</li>
+            <li>‘민들레씨메타’ 로 치킨 뜯는법 대공개</li>
+          </ul>
+        </div>     
+
+      </div>
+
+      <div class="info_box_07">
+        <h3><span>배틀그라운드 영상 팁</span></h3>
+         <div class="arrow_box hidden_wrap">
+                  <button type="button" class="next_button">&rsaquo;<span>다음광고</span></button>
+                  <button type="button" class="prev_button">&lsaquo;<span>이전광고</span></button>
+            </div>
+            
+         <div class="movie_outer">
+              <div class="mv09_wrap">
+                <div class="mv_09">
+                  <iframe src="https://www.youtube.com/embed/lqstIDTNVFY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="mv10_wrap">
+                <div class="mv_10">
+                  <iframe src="https://www.youtube.com/embed/c_OQB7uR3nE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="mv11_wrap">
+              <div class="mv_11">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv12_wrap">
+              <div class="mv_12">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv13_wrap">
+              <div class="mv_13">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv14_wrap">
+              <div class="mv_14">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv15_wrap">
+              <div class="mv_15">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+           
+
+         </div>
+      </div>
+
+    </section> 
+    <!-- //#infoBox03 -->
+
+  
+
+    <section id="contentBox">
+    <h3><span>배틀그라운드 영상 팁</span></h3>
+      <div class="info_box_08">
+        <div class="image_box_05">
+        
+          <div class="arrow_box hidden_wrap">
+                  <button type="button" class="next_button">&rsaquo;<span>다음광고</span></button>
+                  <button type="button" class="prev_button">&lsaquo;<span>이전광고</span></button>
+            </div>
+            <div class="movie_outer">
+              <div class="mv09_wrap">
+                <div class="mv_09">
+                  <iframe src="https://www.youtube.com/embed/lqstIDTNVFY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="mv10_wrap">
+                <div class="mv_10">
+                  <iframe src="https://www.youtube.com/embed/c_OQB7uR3nE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="mv11_wrap">
+              <div class="mv_11">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv12_wrap">
+              <div class="mv_12">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv13_wrap">
+              <div class="mv_13">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv14_wrap">
+              <div class="mv_14">
+                <iframe src="https://www.youtube.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="mv15_wrap">
+              <div class="mv_15">
+                <iframe src="https://www.youtube-nocookie.com/embed/BJ-YAWUsboE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+           
+
+         </div>      
+        </div>
+      </div>
+   
+    <div class="image_box_indi_02">1/7</div>
+    </section> 
+    <!-- //#conBox -->
+
+    <footer id="footBox">
+    <h2 class="footer_logo_01"></h2>
+    <h3 class="footer_logo_02"></h3>
+    <address>
+      <p>㈜카카오게임즈  대표이사 : 남궁훈, 조계현   <br/>
+      경기도 성남시 분당구㈜카카오게임즈 <br/>
+      대표이사 : 남궁훈, 조계현   경기도 성남시 분당구 판교역로 152 </p>
+      
+      <p>kakaogamesPUBG CORPORATION A BLUEHOLE COMPANY<br/>
+서비스 약관/정책개인정보처리방침청소년보호정책권리침해신고배틀그라운드 운영정책게임이용등급</p>
+    </address>
+  </footer>
+    <!-- //#footBox -->
+
+
+
+
+
+
+
+</div>
+
+
+  <!-- script(jQuery) -->
+
+  <script src="../js/base/jQuery-3.3.1.min.js"></script>
+  <script src="../js/base/jQuery-ui.min.js"></script>
+  <script src="../js/src/main/battleground_main.js"></script>
+  <script src="../js/src/main/battleground_adbanner.js"></script>
+ <script src="../js/src/main/battleground_infobox1.js"></script>
+  <script src="../js/src/main/battleground_infobox2.js"></script>
+  <script src="../js/src/main/battleground_infobox3.js"></script>
+</body>
+</html>
