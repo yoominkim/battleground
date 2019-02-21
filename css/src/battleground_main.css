@@ -304,7 +304,7 @@ h1{float:left;width: 10.3125rem;height: 4.6875rem;background-position: 50% 40%;}
 /*adBanner===============================*/
 #adBanner{height:44.5vw;}/*h600px,최소500px*/
 .ad_conbox{height: 15.625rem;}
-#adBanner .arrow_box{position:static; top:50%;}
+#adBanner .arrow_box{position:absolute; top:50%;}
 #adBanner .ad_img1{width: 100%;height: 100%;background-size:cover;background-image: url(../../img/battleground_img/main_adbanner_05.jpg);background-repeat: no-repeat;background-size: cover;}
 #adBanner .ad_img2{width: 100%;height: 100%;position: relative;background-image: url(../../img/battleground_img/main_adbanner_01.jpg);}
 #adBanner .ad_img3{width: 100%;height: 100%;position: relative;background-image: url(../../img/battleground_img/main_adbanner_02.jpg);}
