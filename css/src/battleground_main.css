@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8" ;
 /* battleground_main.css */
 /*body{overflow-x: hidden;}*/
 /* commonArea */
@@ -9,7 +9,7 @@ h4{font-weight: normal;font-size:0.9375rem;text-transform: uppercase;color:#ffcc
 h5{font-weight: normal;font-size:0.9375rem;text-transform: uppercase;color:#ffcc00; }
 p{font-size: 0.8rem;color:#ffcc00;font-family: "맑음고딕", malgumgothic;}
 button{color:#ffcc00;text-align: center;}
-.box_title{padding:1.875rem 1.25rem 0; box-sizing:border-box;  margin: 0 auto 4.375rem auto; width: 95%; background-color: rgba(51,51,51,0.8);}
+.box_title{padding:1.875rem 1.25rem 0rem; box-sizing:border-box;  margin: 0 auto 4.375rem auto; width: 95%; background-color: rgba(51,51,51,0.8);}
 .box_title>h3{padding-bottom: 0.625rem; box-sizing: border-box;}
 .box_title>h3>span{display: block;border-bottom: 2px solid #ffcc00; padding-bottom: 0.625rem; width: 100%;}
 h3>span{display: block;border-bottom: 2px solid #ffcc00; padding-bottom: 0.625rem; width: 100%;}
@@ -19,7 +19,7 @@ h3>span{display: block;border-bottom: 2px solid #ffcc00; padding-bottom: 0.625re
 
 #wrap{width: 100%; height: auto; background-color: #acc;}
 #headBox{position:relative;width: 100%; height: auto;background-color: #333;}
-.container{padding: 0.625rem 0.625rem 0 0;box-sizing:border-box; width: 100%;max-width: 100%}
+.container{padding: 0.625rem 0.625rem 0 0;box-sizing:border-box; width: 100%; min-width: 100%}
 h1{background-image: url(../../img/battleground_img/hearder_logo.png); background-position: 50% 50%; background-repeat: no-repeat;background-size: cover;float: left;}
 .mob_menu{position:relative; display: none;width: 100%;}
 .mob_menu img{width: 2.5rem;height: 2.5rem;}
